@@ -1,0 +1,26 @@
+
+.btn--dunkel {
+    display: inline-block;
+    color: $color--white;
+    padding: 15px 50px;
+    width: auto;
+    height: auto;
+    background: $color--btn-dunkel;
+    border: 2px solid $color--btn-dunkel;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    &:hover,
+    &:focus {
+      background: $color--btn-dunkel-hover;
+      border:  2px solid $color--btn-dunkel-hover;
+    }
+    &:active {
+      background: $color--btn-dunkel-active;
+      border:  2px solid $color--btn-dunkel-active;
+    }
+  }
