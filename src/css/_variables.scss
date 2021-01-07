@@ -17,8 +17,25 @@ $color--btn-dunkel-active: 215,190,157,1;
 
 
 // Fonts
+
+// h1
+$font--size-h1: 64px;
+$font--color-h1: $color--white;
+$font--weight-h1: 900;
+$font--padding-h1: 0.4em;
+
+
+
+h1 {
+    font-size: $font--size-h1;
+    color: $color--white;
+    font-weight: $font--weight-h1;
+    padding: $font--padding-h1;
+  }
+
 /**
-$font--size-h1:
+
 $font--size-h2:
 $font--size-h3:
 **/
+
