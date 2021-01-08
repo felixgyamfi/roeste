@@ -1,0 +1,41 @@
+#section--inhalt {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+
+    .display--product-img {
+        width: 60%;
+    }
+
+    .display--container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    .display--product-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .icon-container {
+        width: 20%;
+        display: inline-block;
+        margin: 0em 1.4em;
+    }
+
+    .body-text {
+        text-align: center;
+        width: 100%;
+
+    }
+
+.icon-inhalt {
+    height: 4em;
+    width: auto;
+}
+
+}
+
