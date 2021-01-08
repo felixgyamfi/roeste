@@ -3,6 +3,7 @@
 // Colors
 
 $color--white: rgba(255,255,255,1);
+$color--black: (0,0,0,0,1);
 $color--anthrazit: rgba(26,26,26,1);
 $color--kraftpapier: rgba(215,190,157,1);
 $color--petrol: rgba(0,109,126,1);
@@ -18,20 +19,25 @@ $color--btn-dunkel-active: 215,190,157,1;
 
 // Fonts
 
+// body
+
+$font--body-font-family: Roboto;
+$font--body-font-style: normal;
+$font--body-font-weight: 400;
+$font--body-font-size: 16px;
+
 // h1
 $font--size-h1: 64px;
 $font--color-h1: $color--white;
 $font--weight-h1: 900;
-$font--padding-h1: 0.4em;
+
+// h2
+$font--size-h2: 48px;
+$font--color-h2: $color--white;
+$font--weight-h2: 900;
+$font--margin-h2: 0.4em 0em;
 
 
-
-h1 {
-    font-size: $font--size-h1;
-    color: $color--white;
-    font-weight: $font--weight-h1;
-    padding: $font--padding-h1;
-  }
 
 /**
 

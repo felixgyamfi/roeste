@@ -9,10 +9,31 @@
 body {
   width: 100%;
   box-sizing: border-box;
-  display: flex;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  display: inline-block;
+  font-family: $font--body-font-family;
+  font-style: $font--body-font-style;
+  font-weight: $font--body-font-weight;
+  font-size: $font--body-font-size;
+
+
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+}
+h1 {
+  font-size: $font--size-h1;
+  color: $color--white;
+  font-weight: $font--weight-h1;
+}
+
+h2 {
+  font-size: $font--size-h2;
+  color: $color--black;
+  font-weight: $font--weight-h2;
+  margin: $font--margin-h2;
 }
 
