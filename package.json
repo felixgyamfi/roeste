@@ -25,5 +25,8 @@
     "postcss-nested": "4.2.3",
     "prettier": "^2.2.1",
     "sass": "^1.32.0"
+  },
+  "dependencies": {
+    "posthtml": "^0.15.1"
   }
 }
