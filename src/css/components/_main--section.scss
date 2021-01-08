@@ -1,12 +1,20 @@
 .main--section {
-    margin: 60px 24px;
+    padding: 1.8em 1.5em;
 }
 
 .section--info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 1.25em 0;
+}
+
+.section--head{
+    font-size: 36px;
+}
+
+.section--img {
+    margin: 1.5em 0;
 }
 
 .section--info-top {
@@ -17,15 +25,13 @@
 }
 
 .section--text-container {
-    margin: 20px 0px;
+    padding: 20px 0px;
 }
 
 .section--text {
     padding: 40px;
     background-color: lawngreen;
 }
-
-
 
 .section--info-container {
     display: flex;
