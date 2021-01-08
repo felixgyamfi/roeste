@@ -23,10 +23,12 @@
     "postcss": "7.0.35",
     "postcss-custom-properties": "^10.0.0",
     "postcss-nested": "4.2.3",
+    "posthtml": "^0.15.1",
+    "posthtml-include": "^1.6.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.0"
   },
-  "dependencies": {
-    "posthtml": "^0.15.1"
+  "dependencies": {    
+    "posthtml-include": "^1.6.0"
   }
 }
