@@ -1,5 +1,13 @@
 .main--section {
     padding: 1.8em 1.5em;
+    display: inline-block;
+}
+
+.main--section-dark {
+    display: inline-block;
+    background-color: $color--anthrazit;
+    color: $color--white;
+    padding: 2.5em 1.5em;
 }
 
 .section--info {

@@ -23,6 +23,27 @@ img {
   height: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: $color--link;
+
+  a:link {
+    color:$color--link;
+  }
+  
+  a:visited {
+    color: $color--link-visited;
+  }
+  
+  a:hover {
+    color: $color--link-hover;
+  }
+  
+  a:active {
+    color: $color--link-active;
+  } 
+}
+
 h1 {
   font-size: $font--size-h1;
   color: $color--white;
@@ -31,8 +52,21 @@ h1 {
 
 h2 {
   font-size: $font--size-h2;
-  color: $color--black;
   font-weight: $font--weight-h2;
+  margin: $font--margin-h2;
+}
+
+h3 {
+  font-size: $font--font-size-h3;
+}
+
+h4 {
+  font-size: $font--font-size-h4;
+}
+
+.subhead-m {
+  font-size: $font--font-size-sh-m;
+  font-weight: $font--font-weight-regular;
   margin: $font--margin-h2;
 }
 

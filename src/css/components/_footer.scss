@@ -1,0 +1,45 @@
+#footer-m {
+
+    img {
+        width: 35px;
+        height: auto;
+    }
+
+    ul {
+        list-style: none;
+        display: inline-block;
+        width: 50%;
+    }
+
+    p {
+        width: 50%;
+    }
+
+    div {
+        margin: 1em 0em;
+    }
+}
+
+.footer {
+    display: inline-block;
+    width: 100%;
+    background-color: $color--black;
+    height: 50vh;
+    color: $color--white;
+
+}
+
+.footer--info {
+    display: inline-block;
+}
+
+.footer--info-content-wide {
+    display: flex;
+    width: 100%
+}
+
+.footer--info-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
