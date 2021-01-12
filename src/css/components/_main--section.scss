@@ -12,27 +12,45 @@
 
 .section--info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 1.25em 0;
 }
 
+.section--info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1.25em 0;
+}
+
+.section--info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25em 0;
+}
 .section--head{
     font-size: 36px;
 }
 
 .section--img {
     margin: 1.5em 0;
+    width: 85%;
 }
 
-.section--info-top {
-    
-    .section--img {
-        text-align: right;
-    }
+.section--img-right {
+    text-align: right;
+    width: 85%;
+
+}
+
+.section--img-full {
+    margin: 1.5em 0em 2em 0em;
+    width: 100%;
 }
 
 .section--text-container {
+    display: flex;
+    flex-direction: column;
     padding: 20px 0px;
 }
 
