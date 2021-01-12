@@ -1,0 +1,29 @@
+#café__section--gallery{
+    display: block;
+
+}
+
+.gallery--container-shell {
+
+    .gallery--container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 100vh;
+    }
+
+    .gallery-img{
+        width: 48%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .gallery--img-left {
+        width: 48%;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-right: 1rem;;
+    }
+}
+
