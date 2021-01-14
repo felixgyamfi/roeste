@@ -15,17 +15,19 @@
         width: 50%;
     }
 
-    div {
-        margin: 1em 0em;
-    }
 }
 
 .footer {
     display: inline-block;
     width: 100%;
     background-color: $color--black;
-    height: 50vh;
     color: $color--white;
+
+    div {
+        div:not(:last-of-type) {
+            margin: 1em 0em;
+        }
+    }
 
 }
 

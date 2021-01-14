@@ -1,0 +1,28 @@
+h1 {
+  font-size: $font--size-h1;
+  color: $color--white;
+  font-weight: $font--weight-h1;
+}
+
+h2 {
+  font-size: $font--size-h2;
+  font-weight: $font--weight-h2;
+  margin: $font--margin-h2;
+}
+
+h3 {
+  font-size: $font--font-size-h3-m;
+  font-weight: $font--font-weight-h3-m;
+  margin: $font--margin-h3-m;
+}
+
+h4 {
+  font-size: $font--font-size-h4;
+}
+
+.subhead-m {
+  font-style: $font--font-style-sh-m;
+  font-size: $font--font-size-sh-m;
+  font-weight: $font--font-weight-sh-m;
+  margin: $font--margin-h2;
+}

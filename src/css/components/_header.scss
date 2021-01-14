@@ -1,13 +1,17 @@
+%header-container-ph {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
 #home--header-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/main/images/FEND-Coffee-latte-art-3.png);
-    background-repeat: no-repeat;
-    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../assets/main/images/FEND-Coffee-latte-art-3.png);
     height: 75vh;
-    background-size: cover;
-    
+    @extend %header-container-ph;
+
     .header {
       top: 0;
       width: 100%;
@@ -16,7 +20,7 @@
   
     .header--title {
       width: 100%;
-      margin: 14rem 0 7rem 0;
+      margin: 28.5vh 0 15vh 0;
     }
     
     .header--subhead {
@@ -32,25 +36,14 @@
 }
 
 #café--header-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/main/images/FEND-Coffee-shop.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
   height: 40vh;
-  background-size: cover;
+  @extend %header-container-ph;
 }
 
 
 #herkunft--header-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/main/images/FEND-Coffee-beans-hand-2.jpg); 
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
   height: 40vh;
-  background-size: cover;
+  @extend %header-container-ph;
 }

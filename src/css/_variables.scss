@@ -1,5 +1,3 @@
-
-
 // Colors
 
 $color--white: rgba(255,255,255,1);
@@ -20,34 +18,38 @@ $color--btn-dunkel-active: 215,190,157,1;
 // Fonts
 
 // body m
+$font--font-family-body:'Roboto', sans-serif;
+$font--font-style-body: normal;
+$font--font-weight-body: 400;
+$font--font-size-body: 1.4rem; // 14px
 
-$font--body-font-family: Roboto;
-$font--body-font-style: normal;
-$font--body-font-weight: 400;
-$font--body-font-size: 14px;
-
-// h1
-$font--size-h1: 64px;
+// h1 m
+$font--size-h1: 6.4rem;
 $font--color-h1: $color--white;
 $font--weight-h1: 900;
+$font--line-height-h1: 110%;
+$font--margin-h1: 3rem 0 2rem;
 
-// h2
-$font--size-h2: 48px;
+
+// h2 m
+$font--size-h2: 3.6rem;
 $font--weight-h2: 900;
-$font--margin-h2: 0.55em 0;
+$font--margin-h2: 0 0 1.2rem 0;
 
-// h3
-$font--font-size-h3: 42px;
-$font--font-weight-h3: 900;
+// h3 m
+$font--font-size-h3-m: 3.2rem;
+$font--font-weight-h3-m: 900;
+$font--margin-h3-m: 0 0 1.2rem 0;
 
-//h4 
-$font--font-size-h4: 24px;
+//h4 m
+$font--font-size-h4: 2.4rem;
+$font--margin-h4: 0 0 1.2rem 0;
 
 // subhead m
 $font--font-family-sh-m: Roboto;
 $font--font-style-sh-m: normal;
 $font--font-weight-sh-m: 400;
-$font--font-size-sh-m: 18px;
+$font--font-size-sh-m: 1.8rem;
 
 $font--font-weight-regular: 400;
 
@@ -59,14 +61,4 @@ $color--link-hover: $color--medium-grey;
 $color--link-active: $color--medium-grey;
 
 
-
-
- /* unvisited link */
-
-
-/**
-
-$font--size-h2:
-$font--size-h3:
-**/
 

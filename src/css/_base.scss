@@ -6,14 +6,20 @@
     box-sizing: inherit;
   }
 
+
+html {
+  font-size: 10px; 
+}
+
+
 body {
   width: 100%;
   box-sizing: border-box;
   display: block;
-  font-family: $font--body-font-family;
-  font-style: $font--body-font-style;
-  font-weight: $font--body-font-weight;
-  font-size: $font--body-font-size;
+  font-family: $font--font-family-body;
+  font-style: $font--font-style-body;
+  font-weight: $font--font-weight-body;
+  font-size: $font--font-size-body;
 }
 
 img {
@@ -21,6 +27,10 @@ img {
   padding: 0;
   width: inherit;
   height: inherit;
+}
+
+p {
+  line-height: 130%;
 }
 
 a {
@@ -44,29 +54,4 @@ a {
   } 
 }
 
-h1 {
-  font-size: $font--size-h1;
-  color: $color--white;
-  font-weight: $font--weight-h1;
-}
-
-h2 {
-  font-size: $font--size-h2;
-  font-weight: $font--weight-h2;
-  margin: $font--margin-h2;
-}
-
-h3 {
-  font-size: $font--font-size-h3;
-}
-
-h4 {
-  font-size: $font--font-size-h4;
-}
-
-.subhead-m {
-  font-size: $font--font-size-sh-m;
-  font-weight: $font--font-weight-regular;
-  margin: $font--margin-h2;
-}
 

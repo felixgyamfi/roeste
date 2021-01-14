@@ -1,65 +1,67 @@
 .main--section {
-    padding: 1.8em 1.5em;
+    padding: 6rem 2.4rem;
     display: inline-block;
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    &-dark {
+        display: inline-block;
+        background-color: $color--anthrazit;
+        color: $color--white;
+        padding: 6rem 2.4rem;
+    }
 }
 
-.main--section-dark {
-    display: inline-block;
-    background-color: $color--anthrazit;
-    color: $color--white;
-    padding: 2.5em 1.5em;
+%section--info-ph {
+    display: flex;
 }
 
 .section--info {
-    display: flex;
     flex-direction: column;
-    margin: 1.25em 0;
-}
+    @extend %section--info-ph;
 
-.section--info-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 1.25em 0;
-}
+    &-right {
+        flex-direction: column;
+        align-items: flex-end;
+        @extend %section--info-ph;
+    }
 
-.section--info-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.25em 0;
-}
-.section--head{
-    font-size: 36px;
+    &-row {
+        justify-content: space-between;
+        @extend %section--info-ph;
+    }
+
+    &-container {
+        display: flex;
+        width: 48%;
+    }
 }
 
 .section--img {
     margin: 1.5em 0;
     width: 85%;
-}
 
-.section--img-right {
-    text-align: right;
-    width: 85%;
+    &-right {
+        margin: 1.5em 0;
+        text-align: right;
+        width: 85%;
+    }
 
-}
-
-.section--img-full {
-    margin: 1.5em 0em 2em 0em;
-    width: 100%;
+    &-full {
+        margin: 1.5em 0em 2em 0em;
+        width: 100%;
+    }
 }
 
 .section--text-container {
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 0 0 2rem 0;
 }
 
 .section--text {
     padding: 40px;
     background-color: lawngreen;
-}
-
-.section--info-container {
-    display: flex;
-    width: 48%;
 }
