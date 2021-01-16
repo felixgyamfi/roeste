@@ -1,37 +1,22 @@
-// MEDIA QUERY MANAGER
-/*
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-// Very large desktop devices (1920px and up)
-@media (min-width: 1920px) { ... }
-*/
-
-// 1em = 14px
-
-@mixin respond ($breakpoint) {
-    @if $breakpoint == small {
-        @media (min-width: 41,14em) { @content };       // 576px
+@mixin mq($size){
+    @if $size == media-xxl {
+        @media (min-width: 137.14em) { @content; } // 1920px
     }
-    @if $breakpoint == tablet {
-        @media (min-width: 54,86em) { @content };       // 786px
+    @else if $size == media-xl {
+        @media (min-width: 85.71em) { @content; } // 1200px
     }
-    @if $breakpoint == desktop {
-        @media (min-width: 70,86em) { @content };       // 992px
+    @else if $size == media-lg {
+        @media (min-width: 70.86em) { @content; } // 992px
     }
-    @if $breakpoint == large {
-        @media (min-width: 85,71em) { @content };       // 1200px
-    }
-    @if $breakpoint == xlarge {
-        @media (max-width: 137,14em) { @content };      // 1920px
-    }
-}
+    @else if $size == media-md {
+        @media (min-width: 54.86em) { @content; } // 768px
+    } 
+    @else if $size == media-sm {
+        @media (min-width: 41.14em) { @content; } // 576px
+    } 
+    
+     
+     
+    
+  }

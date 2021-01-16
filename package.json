@@ -28,7 +28,7 @@
     "prettier": "^2.2.1",
     "sass": "^1.32.0"
   },
-  "dependencies": {    
+  "dependencies": {
     "posthtml-include": "^1.6.0"
   }
 }
