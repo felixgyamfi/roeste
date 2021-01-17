@@ -1,3 +1,18 @@
+#home__section--info {
+    .section--info {
+        flex-direction: column;
+    }
+}
+
+#cafe__section--info {
+    padding-bottom: 0;
+}
+
+#herkunft__section--info {
+    .section--info {
+        flex-direction: column;
+    }
+}
 .main--section {
     padding: 6rem 2.4rem;
     display: inline-block;
@@ -19,12 +34,12 @@
 }
 
 .section--info {
-    flex-direction: column;
     @extend %section--info-ph;
 
     &-right {
         flex-direction: column;
         align-items: flex-end;
+        margin-bottom: 3rem;
         @extend %section--info-ph;
     }
 
@@ -37,6 +52,7 @@
         display: flex;
         width: 48%;
     }
+
 }
 
 .section--img {
@@ -58,7 +74,10 @@
 .section--text-container {
     display: flex;
     flex-direction: column;
+
+    &:not(:last-of-type) {
     padding: 0 0 2rem 0;
+    }
 }
 
 .section--text {
