@@ -12,6 +12,10 @@
     height: 75vh;
     @extend %header-container-ph;
 
+    @include mq(media-xl) {
+      height: 65vh;
+    }
+
     .header {
       top: 0;
       width: 100%;
@@ -21,6 +25,10 @@
     .header--title {
       width: 100%;
       margin: 28.5vh 0 15vh 0;
+
+      @include mq(media-xl) {
+      margin: 24vh 0 15vh 0;
+      }
     }
     
     .header--subhead {

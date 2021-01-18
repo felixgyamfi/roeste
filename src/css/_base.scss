@@ -9,21 +9,21 @@
 html {
   font-size: 62.5%; 
 
-  @include mq(media-sm) {
-    font-size: 80%;
-  }
-  @include mq(media-md) {
-    font-size: 95%;
-  }
-  @include mq(media-lg) {
-    font-size: 112.5%;
-  }
-  @include mq(media-xl) {
-    font-size: 130%;
-  }
-  @include mq(media-xxl) {
-    font-size: 130%;
-  }
+  // @include mq(media-sm) {
+  //   font-size: 75%;
+  // }
+  // @include mq(media-md) {
+  //   font-size: 90%;
+  // }
+  // @include mq(media-lg) {
+  //   font-size: 100%;
+  // }
+  // @include mq(media-xl) {
+  //   font-size: 112.5%;
+  // }
+  // @include mq(media-xxl) {
+  //   font-size: 125%;
+  // }
 }
 
 body {
@@ -33,7 +33,11 @@ body {
   font-family: $font--font-family-body;
   font-style: $font--font-style-body;
   font-weight: $font--font-weight-body;
-  font-size: $font--font-size-body;
+  font-size: $font--font-size-body-m;
+
+  @include mq(media-xl) {
+    font-size: $font--font-size-body;
+  }
 
   @include mq(media-xxl) {
     max-width: 2200px;
