@@ -1,5 +1,4 @@
 #section--sorten {
-
     text-align: center;
 
     .btn--dunkel {
@@ -9,6 +8,16 @@
     .section--head {
         text-align: left;
         color: $color--white;
+
+        @include mq(media-xl) {
+            margin: 0;
+            width: 30%;
+        }
+    }
+
+    .icon-container img {
+        height: 2rem;
+        width: auto;
     }
 }
 
@@ -20,13 +29,28 @@
     width: inherit;
     margin-bottom: 1.5em;
     text-align: left;
+
+    @include mq(media-xl) {
+        flex-flow: unset;
+    }
 }
 
 .display--product-container {
     width: 48%;
     margin: 1em 0em;
+
+    @include mq(media-xl) {
+        margin: 8rem 0;
+        
+        &:not(:last-of-type) {
+            margin-right: 1.5rem;
+        }
+    }
 }
 
+.display--info-container {
+    margin-top: 2rem;
+}
 .display--product-img {
     width: 100%;
     object-fit: contain;
@@ -37,9 +61,22 @@
     font-style: $font--font-style-sh-m;
     font-weight: $font--font-weight-sh-m;
     font-size: $font--font-size-sh-m;
+    
+    @include mq(media-xl) {
+        font-family: $font--font-family-sh;
+        font-style: $font--font-style-sh;
+        font-weight: $font--font-weight-sh;
+        font-weight: $font--font-size-sh;
+        margin: $font--margin-sh;
+    }
 }
 
 .product-price {
-    font-size: 14px;
+    font-size: $font--font-size-body-m;
     color: $color--medium-grey;
+
+    @include mq(media-xl) {
+        font-size: $font--font-size-body;
+        margin: $font--margin-sh;
+    }
 }

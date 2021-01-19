@@ -46,6 +46,10 @@
         background-color: $color--anthrazit;
         color: $color--white;
         padding: 6rem 2.4rem;
+
+        @include mq(media-xl) {
+            padding: 12.5rem 10rem;
+        }
     }
 }
 

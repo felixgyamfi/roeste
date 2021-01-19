@@ -1,47 +1,113 @@
-#footer-m {
+.footer {
+    width: 100%;
+    display: block;
+    background-color: $color--black;
+    color: $color--white;
+    padding: 6rem 2.4rem;
+
+    @include mq(media-xl) {
+        display: flex;
+        padding: 12.5rem 10rem;
+    }
 
     img {
-        width: 35px;
+        width: 3.5rem;
         height: auto;
+
+        @include mq(media-xl) {
+            width: 7rem;
+            margin-bottom: 1.6rem;
+        }
     }
 
     ul {
         list-style: none;
         display: inline-block;
         width: 50%;
+        font-size: 1.4rem;
     }
-
-    p {
-        width: 50%;
-    }
-
-}
-
-.footer {
-    display: inline-block;
-    width: 100%;
-    background-color: $color--black;
-    color: $color--white;
 
     div {
         div:not(:last-of-type) {
-            margin: 1em 0em;
+            margin: 1em 0;
+
+            @include mq(media-xl) {
+                margin: 0;
+            }
         }
     }
 
+    &--text {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        @include mq(media-xl) {
+            margin: 0;
+        }
+    }
+
+    &--head{
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+
+        @include mq(media-xl) {
+            font-size: 4.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &--subhead {
+        font-size: 1.8rem;
+    }
+
+    &--info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    
+        @include mq(media-xl) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10rem;
+        }
+    }
+
+    &--info-content-wide {
+        display: flex;
+        font-size: 1.4rem;
+        width: 100%;
+    
+        @include mq(media-xl) {
+            display: block;
+            width: 30%;
+        }
+
+        p:not(:last-of-type) {
+            margin-bottom: 2.5rem;
+        }
+    }
+    
+    &--info-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+
+        @include mq(media-xl) {
+            flex-direction: row-reverse;
+            justify-items: flex-start;
+            width: 30%;
+        }
+    }
+
+    &--logo-text {
+        width: 35%;
+        margin-bottom: 3.5rem;
+    }
 }
 
-.footer--info {
-    display: inline-block;
-}
 
-.footer--info-content-wide {
-    display: flex;
-    width: 100%
-}
 
-.footer--info-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
