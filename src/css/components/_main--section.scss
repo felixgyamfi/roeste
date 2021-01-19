@@ -10,6 +10,7 @@
         font-size: 1.8rem;
     }
 }
+
 #cafe__section--info {
     padding-bottom: 0;
 }
@@ -80,12 +81,12 @@
         flex-direction: column;
 
         @include mq(media-xl) {
-        padding-right: 12rem;
+            padding-right: 12rem;
         }
 
         &:not(:last-of-type) {
-        padding-bottom: 2rem;
-        }      
+            padding-bottom: 2rem;
+        }
     }
 
     &:nth-child(2n) {
