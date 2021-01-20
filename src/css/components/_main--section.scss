@@ -21,9 +21,6 @@
     }
 }
 
-#section--ort {
-    width: 100%;
-}
 
 .main--section {
     padding: 6rem 2.4rem;
@@ -112,6 +109,14 @@
     &-container {
         display: flex;
         width: 48%;
+    }
+
+    &-center {
+        @include mq(media-xl) {
+            display: flex;
+            justify-content: center;
+        }
+
     }
 
 }
