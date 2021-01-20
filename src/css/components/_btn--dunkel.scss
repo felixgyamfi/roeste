@@ -12,7 +12,11 @@
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-    font-size: $font--font-size-body;
+    font-size: $font--font-size-body-m;
+
+    @include mq(media-xl) {
+      font-size: $font--font-size-body;
+    }
   
     &:hover,
     &:focus {
