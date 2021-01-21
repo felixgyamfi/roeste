@@ -1,13 +1,13 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 
   // @include mq(media-sm) {
   //   font-size: 75%;
@@ -40,7 +40,7 @@ body {
   }
 
   @include mq(media-xxl) {
-    max-width: 2200px;
+    max-width: 220rem;
     margin: auto;
   }
 }
@@ -61,20 +61,18 @@ a {
   color: $color--link;
 
   a:link {
-    color:$color--link;
+    color: $color--link;
   }
-  
+
   a:visited {
     color: $color--link-visited;
   }
-  
+
   a:hover {
     color: $color--link-hover;
   }
-  
+
   a:active {
     color: $color--link-active;
-  } 
+  }
 }
-
-

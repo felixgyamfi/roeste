@@ -1,0 +1,17 @@
+#nav-m {
+    background-color: purple; // for testing
+
+    display: none;
+    padding: 1rem 2.4rem;
+
+    @include mq-rv(media-md) {
+        display: flex;
+    }
+}
+
+.nav--burger {
+    padding: .8rem 0;
+    img {
+        height: 100%;
+    }
+}
