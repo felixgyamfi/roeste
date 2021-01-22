@@ -33,6 +33,10 @@
     @include mq(media-xl) {
         flex-flow: unset;
     }
+
+    @include mq(media-lg) {
+        flex-flow: unset;
+    }
 }
 
 .display--product-container {
@@ -40,6 +44,14 @@
     margin: 1em 0em;
 
     @include mq(media-xl) {
+        margin: 8rem 0;
+        
+        &:not(:last-of-type) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    @include mq(media-lg) {
         margin: 8rem 0;
         
         &:not(:last-of-type) {

@@ -35,13 +35,27 @@ video {
     width: 100%;
 }
 
-
 .main--section {
-    padding: 6rem 2.4rem;
+    padding: $padding--main-m;
 
+    @include mq(media-xxl) {
+        display: inline-block;
+        padding: $padding--main-xxl;
+    }
     @include mq(media-xl) {
         display: inline-block;
-        padding: 12.5rem 10rem;
+        padding: $padding--main-xl;
+    }
+    @include mq(media-lg) {
+        display: inline-block;
+        padding: $padding--main-lg;
+    }
+    @include mq(media-md) {
+        display: inline-block;
+        padding: $padding--main-md;
+    }
+    @include mq(media-sm) {
+        padding: $padding--main-sm;
     }
 
     p {
@@ -56,10 +70,16 @@ video {
         display: inline-block;
         background-color: $color--anthrazit;
         color: $color--white;
-        padding: 6rem 2.4rem;
+        padding: $padding--main-m;
 
         @include mq(media-xl) {
-            padding: 12.5rem 10rem;
+            padding: $padding--main-xl;
+        }
+        @include mq(media-lg) {
+            padding: $padding--main-lg;
+        }
+        @include mq(media-sm) {
+            padding: $padding--main-sm;
         }
     }
 }
@@ -71,6 +91,11 @@ video {
         flex-direction: row;
         align-items: flex-start;
     }
+    @include mq(media-lg) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
 }
 
 .section--info {
@@ -78,6 +103,9 @@ video {
     flex-direction: column;
 
     @include mq(media-xl) {
+        flex-direction: row-reverse;
+    }
+    @include mq(media-lg) {
         flex-direction: row-reverse;
     }
 
@@ -89,6 +117,12 @@ video {
         @include mq(media-xl) {
             margin-bottom: 13rem;
         }
+        @include mq(media-lg) {
+            margin-bottom: 10rem;
+        }
+        @include mq(media-md) {
+            align-items: center;
+        }
     }
 
     .section--text-container {
@@ -98,12 +132,18 @@ video {
         @include mq(media-xl) {
             padding-right: 12rem;
         }
-
+        @include mq(media-lg) {
+            padding-right: 12rem;
+        }
+        @include mq(media-md) {
+            padding-right: 0;
+        }
         &:not(:last-of-type) {
             padding-bottom: 2rem;
         }
     }
 
+    // every 2nd child of .section--info
     &:nth-child(2n) {
 
         .section--text {
@@ -112,6 +152,12 @@ video {
                 padding-top: 5rem;
                 padding-right: 10rem;
             }
+            @include mq(media-lg) {
+                padding-left: 12rem;
+                padding-top: 5rem;
+                padding-right: 10rem;
+            }
+            
         }
     }
 
@@ -119,20 +165,20 @@ video {
         justify-content: space-between;
         @extend %section--info-ph;
     }
-
     &-container {
         display: flex;
         width: 48%;
     }
-
     &-center {
         @include mq(media-xl) {
             display: flex;
             justify-content: center;
         }
-
+        @include mq(media-lg) {
+            display: flex;
+            justify-content: center;
+        }
     }
-
 }
 
 .section--container {
@@ -140,9 +186,18 @@ video {
     @include mq(media-xl) {
         width: 50%;
     }
+    @include mq(media-lg) {
+        width: 50%;
+    }
 
     img {
         @include mq(media-xl) {
+            width: 100%;
+        }
+        @include mq(media-lg) {
+            width: 100%;
+        }
+        @include mq(media-md) {
             width: 100%;
         }
     }
@@ -155,18 +210,28 @@ video {
     @include mq(media-xl) {
         margin: 0;
     }
+    @include mq(media-lg) {
+        margin: 0;
+    }
+    @include mq(media-md) {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 
     &-full {
         margin: 1.5em 0em 2em 0em;
         width: 100%;
     }
-
     &-right {
         margin: 4em 0;
         text-align: right;
         width: 85%;
 
         @include mq(media-xl) {
+            margin: 0;
+        }
+        @include mq(media-lg) {
             margin: 0;
         }
     }

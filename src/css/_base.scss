@@ -39,6 +39,10 @@ body {
     font-size: $font--font-size-body;
   }
 
+  @include mq(media-md) {
+    font-size: $font--font-size-body-t;
+  }
+
   @include mq(media-xxl) {
     max-width: 220rem;
     margin: auto;

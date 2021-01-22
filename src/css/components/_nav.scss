@@ -3,8 +3,18 @@
 
     padding: 1rem 10rem;
 
+    @include mq(media-xxl) {
+        padding: $padding--nav_m-xxl;
+    }
+    @include mq(media-xl) {
+        padding: $padding--nav_m-xl;
+    }
+    @include mq(media-lg) {
+        padding: $padding--nav_m-lg;
+    }
+    
     @include mq-rv(media-md) {
-        display: none;
+        display: none; // switch mobile nav off
     }
 }
 

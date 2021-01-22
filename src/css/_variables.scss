@@ -1,3 +1,30 @@
+// LAYOUT
+
+$padding--side-m: 2.4rem;
+$padding--side-sm: 4rem;
+$padding--side-md: 10rem;
+$padding--side-lg: 10rem;
+$padding--side-xl: 10rem;
+$padding--side-xxl: 10rem;
+
+
+// nav
+$padding--nav_m-m: 1rem $padding--side-m;
+$padding--nav_m-sm: 1rem $padding--side-sm;
+$padding--nav_m-md: 1rem $padding--side-md;
+$padding--nav_m-lg: 1rem $padding--side-lg;
+$padding--nav_m-xl: 1rem $padding--side-xl;
+$padding--nav_m-xxl: 1rem $padding--side-xxl;
+
+//main
+$padding--main-m: 6rem $padding--side-m;
+$padding--main-sm: 8rem $padding--side-sm;
+$padding--main-md: 10rem $padding--side-md;
+$padding--main-lg: 12rem $padding--side-lg;
+$padding--main-xl: 12.5rem $padding--side-xl;
+$padding--main-xxl: 12.5rem $padding--side-xxl;
+
+
 // COLORS
 
 $color--white: rgba(255,255,255,1);
@@ -16,7 +43,6 @@ $color--btn-dunkel-active: 215,190,157,1;
 
 
 // FONTS
-
 
 $font--font-family-body:'Roboto', sans-serif;
 $font--font-style-body: normal;
@@ -54,6 +80,11 @@ $font--font-weight-sh-m: 400;
 $font--font-size-sh-m: 1.8rem;
 
 $font--font-weight-regular: 400;
+
+
+// TABLET
+
+$font--font-size-body-t: 1.6rem;
 
 // DESKTOP
 

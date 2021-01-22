@@ -4,6 +4,14 @@
     display: none;
     padding: 1rem 2.4rem;
 
+    @include mq(media-md) {
+        padding: $padding--nav_m-md;
+    }
+    @include mq(media-sm) {
+        padding: $padding--nav_m-sm;
+    }
+
+
     @include mq-rv(media-md) {
         display: flex;
     }
