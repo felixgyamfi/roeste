@@ -3,22 +3,74 @@
 
     width: 100%;
     height: 100%;
+
+    @include mq-rv(media-md) {
+        display: flex; // switch on mobile nav
+    }
 }
 
-.nav--menu {
+.navbar-m {
+    padding: 1rem 2.4rem;
 
-    background-color: black;
-    z-index: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 100%;
+    height: 5.5rem;
 
     ul {
         list-style: none;
     }
-}
 
-.navbar {
-    padding: 1rem 2.4rem;
+    .nav--logo {
+        img {
+            height: 100%;
+        }
+    }
+
+    .nav--links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 100%;
+
+        li {
+            margin-top: 1rem;
+
+            &:not(:last-of-type) {
+                margin-right: 7rem;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:after {
+                    background: none repeat scroll 0 0 transparent;
+                    content: "";
+                    display: block;
+                    height: .1rem;
+                    background: $color--white;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    div {
+        height: 100%;
+    }
+
+    @include mq(media-xxl) {
+        max-width: 220rem;
+    }
 
     @include mq(media-md) {
         padding: $padding--nav_m-md;
@@ -26,10 +78,6 @@
 
     @include mq(media-sm) {
         padding: $padding--nav_m-sm;
-    }
-
-    @include mq-rv(media-md) {
-        display: flex; // switch on mobile nav
     }
 }
 
@@ -40,3 +88,30 @@
         height: 100%;
     }
 }
+
+.nav--menu {
+    // for slide animation (JS)
+    left: 100%;
+    transition: left .5s linear;
+
+    position: fixed;
+    background-color: black;
+    z-index: 900;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &-close {
+        padding: 2.4rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    nav {
+        margin: auto auto auto 6rem;
+    }
+}
+
