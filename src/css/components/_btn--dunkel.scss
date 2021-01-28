@@ -1,43 +1,42 @@
 .btn--dunkel {
-    display: inline-block;
-    color: $color--white;
-    padding: 15px 50px;
-    width: auto;
-    height: auto;
-    background: $color--btn-dunkel;
-    border: 2px solid $color--btn-dunkel;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-size: $font--font-size-body-m;
+  display: inline-block;
+  color: $color--white;
+  padding: 15px 50px;
+  width: auto;
+  height: auto;
+  background: $color--btn-dunkel;
+  border: 2px solid $color--btn-dunkel;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: $font--font-size-body-m;
 
-    @include mq(media-xl) {
-      font-size: $font--font-size-body;
-    }
-  
-    &:hover,
-    &:focus {
-      background: $color--btn-dunkel-hover;
-      border:  2px solid $color--btn-dunkel-hover;
-    }
-    
-    &:active {
-      background: $color--btn-dunkel-active;
-      border:  2px solid $color--btn-dunkel-active;
-    }
+  @include mq(media-xl) {
+    font-size: $font--font-size-body;
   }
 
-  #home__section--info {
-    .btn--dunkel {
-        height: auto;
-        width: auto;
-        background: none;
-        border: none;
-        text-align: left;
-        color: black;
-        padding: 0;
-        font-size: 1.8rem;
-    }
+  &:hover,
+  &:focus {
+    background: $color--btn-dunkel-hover;
+    border: 2px solid $color--btn-dunkel-hover;
+  }
+
+  &:active {
+    background: $color--btn-dunkel-active;
+    border: 2px solid $color--btn-dunkel-active;
+  }
+}
+
+#home__section--info {
+  .btn--dunkel {
+    height: auto;
+    width: auto;
+    background: none;
+    border: none;
+    text-align: left;
+    color: black;
+    padding: 0;
+  }
 }

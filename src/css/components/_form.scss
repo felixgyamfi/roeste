@@ -1,0 +1,62 @@
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 1.2rem;
+     border-bottom: .3rem solid $color--black;
+     border-left: none;
+     border-right: none;
+     border-top: none;
+     box-sizing: border-box;
+     margin-top: .6rem;
+     margin-bottom: 4rem;
+     resize: vertical;
+         /* Allow the user to vertically resize the textarea (not horizontally) */
+
+         &:active {
+            background-color: $color--light-grey;
+         }
+ }
+
+ /* Style the submit button with a specific background color etc */
+ input[type=submit] {
+     margin-top: 4rem;
+    display: inline-block;
+    color: $color--white;
+    padding: 1.5rem 5rem;
+    width: auto;
+    height: auto;
+    background: $color--btn-dunkel;
+    border: .2rem solid $color--btn-dunkel;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: $font--font-size-body-m;
+
+    @include mq(media-xl) {
+      font-size: $font--font-size-body;
+    }
+  
+    &:hover,
+    &:focus {
+      background: $color--btn-dunkel-hover;
+      border:  .2rem solid $color--btn-dunkel-hover;
+    }
+    
+    &:active {
+      background: $color--btn-dunkel-active;
+      border:  .2rem solid $color--btn-dunkel-active;
+    }
+ }
+
+ input[type=checkbox] {
+     margin-right: 1rem;
+ }
+
+ /* Add a background color and some padding around the form */
+ .form {
+     border-radius: .5rem;
+ }
