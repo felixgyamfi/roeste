@@ -19,12 +19,13 @@
     }
     @include mq(media-sm) {
         display: flex;
-        padding: $padding--main-sm
+        padding: $padding--main-sm;
     }
 
     img {
         width: 3.5rem;
         height: auto;
+        margin-bottom: 1.5rem;
 
         @include mq(media-xl) {
             width: 7rem;
