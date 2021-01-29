@@ -16,6 +16,13 @@
             flex-direction: row-reverse;
         }
     }
+
+    .align-right {
+        align-self: flex-end;
+    }
+    .align-left {
+        align-self: flex-start;
+    }
 }
 
 #kontakt--main {
@@ -169,7 +176,6 @@ video {
                 padding-top: 5rem;
                 padding-right: 10rem;
             }
-            
         }
     }
 
@@ -208,7 +214,7 @@ video {
 
 .section--img {
     margin: 1.5em 0;
-    width: 85%;
+    width: $section--img-stretch;
 
     @include mq(media-xl) {
         margin: 0;
@@ -229,7 +235,7 @@ video {
     &-right {
         margin: 4em 0;
         text-align: right;
-        width: 85%;
+        width: $section--img-stretch;
 
         @include mq(media-xl) {
             margin: 0;
