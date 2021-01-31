@@ -7,11 +7,49 @@
 #herkunft__section--info {
     .section--info {
         flex-direction: column;
+
+        @include mq(media-xl) {
+            flex-direction: row;
+
+            &:not(:last-of-type) {
+                padding-bottom: 8rem; // first section in #herkunft gets margin-bottom
+            }
+
+            &:nth-of-type(3) {
+                flex-direction: row-reverse; // move last picture #herkunft to the left
+            }
+
+            .section--text {
+                &:not(:last-of-type) {
+                    padding-left: 0;
+                }
+            }
+
+            .margin-top {
+                margin-top: 15rem;
+            }
+
+            .extra-padding {
+                padding: 0 10rem;
+            }
+        }
+
+        @include mq(media-lg) {
+            flex-direction: column;
+        }
+    }
+    .section--container {
+        @include mq(media-xl) {
+            width: 50%;
+        }
+        @include mq(media-lg) {
+            width: auto;
+        }
     }
 
     .section--info-full {
         flex-direction: column;
-    
+
         @include mq(media-xl) {
             flex-direction: row-reverse;
         }
@@ -20,8 +58,13 @@
     .align-right {
         align-self: flex-end;
     }
+
     .align-left {
         align-self: flex-start;
+    }
+
+    .section--img {
+        width: 70%;
     }
 }
 
@@ -53,18 +96,22 @@ video {
         display: inline-block;
         padding: $padding--main-xxl;
     }
+
     @include mq(media-xl) {
         display: inline-block;
         padding: $padding--main-xl;
     }
+
     @include mq(media-lg) {
         display: inline-block;
         padding: $padding--main-lg;
     }
+
     @include mq(media-md) {
         display: inline-block;
         padding: $padding--main-md;
     }
+
     @include mq(media-sm) {
         padding: $padding--main-sm;
     }
@@ -86,9 +133,11 @@ video {
         @include mq(media-xl) {
             padding: $padding--main-xl;
         }
+
         @include mq(media-lg) {
             padding: $padding--main-lg;
         }
+
         @include mq(media-sm) {
             padding: $padding--main-sm;
         }
@@ -102,11 +151,12 @@ video {
         flex-direction: row;
         align-items: flex-start;
     }
+
     @include mq(media-lg) {
         flex-direction: row;
         align-items: flex-start;
     }
-    
+
 }
 
 .section--info {
@@ -116,6 +166,7 @@ video {
     @include mq(media-xl) {
         flex-direction: row-reverse;
     }
+
     @include mq(media-lg) {
         flex-direction: row-reverse;
     }
@@ -132,9 +183,11 @@ video {
         @include mq(media-xl) {
             margin-bottom: 13rem;
         }
+
         @include mq(media-lg) {
             margin-bottom: 10rem;
         }
+
         @include mq(media-md) {
             align-items: center;
         }
@@ -144,18 +197,22 @@ video {
         display: flex;
         flex-direction: column;
 
-        @include mq(media-xl) {
-            padding-right: 12rem;
-        }
-        @include mq(media-lg) {
-            padding-right: 12rem;
-        }
-        @include mq(media-md) {
-            padding-right: 0;
-        }
         &:not(:last-of-type) {
             padding-bottom: 2rem;
         }
+
+        @include mq(media-xl) {
+            padding-right: 12rem;
+        }
+
+        @include mq(media-lg) {
+            padding-right: 12rem;
+        }
+
+        @include mq(media-md) {
+            padding-right: 0;
+        }
+
     }
 
     // margin under info--section
@@ -171,6 +228,7 @@ video {
                 padding-top: 5rem;
                 padding-right: 10rem;
             }
+
             @include mq(media-lg) {
                 padding-left: 12rem;
                 padding-top: 5rem;
@@ -183,15 +241,18 @@ video {
         justify-content: space-between;
         @extend %section--info-ph;
     }
+
     &-container {
         display: flex;
         width: 48%;
     }
+
     &-center {
         @include mq(media-xl) {
             display: flex;
             justify-content: center;
         }
+
         @include mq(media-lg) {
             display: flex;
             justify-content: center;
@@ -203,6 +264,7 @@ video {
     @include mq(media-xl) {
         width: 50%;
     }
+
     @include mq(media-lg) {
         width: 50%;
     }
@@ -219,9 +281,11 @@ video {
     @include mq(media-xl) {
         margin: 0;
     }
+
     @include mq(media-lg) {
         margin: 0;
     }
+
     @include mq(media-md) {
         width: 100%;
         height: auto;
@@ -232,6 +296,7 @@ video {
         margin: 1.5em 0em 2em 0em;
         width: 100%;
     }
+
     &-right {
         margin: 4em 0;
         text-align: right;
@@ -240,6 +305,7 @@ video {
         @include mq(media-xl) {
             margin: 0;
         }
+
         @include mq(media-lg) {
             margin: 0;
         }
