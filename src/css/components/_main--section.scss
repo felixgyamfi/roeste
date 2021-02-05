@@ -230,9 +230,9 @@ video {
             }
 
             @include mq(media-lg) {
-                padding-left: 12rem;
+                padding-left: 0rem;
                 padding-top: 5rem;
-                padding-right: 10rem;
+                padding-right: 0rem;
             }
         }
     }
