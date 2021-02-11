@@ -10,7 +10,12 @@
 $margin--btn-bottom: 6rem;
 
 #home--header-container {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../assets/main/images/FEND-Coffee-latte-art-3.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url(../assets/main/images/FEND-Coffee-latte-art-3.jpg);
   height: 75vh;
   @extend %header-container-ph;
 
@@ -53,14 +58,23 @@ $margin--btn-bottom: 6rem;
 }
 
 #cafe--header-container {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/main/images/FEND-Coffee-shop.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/main/images/FEND-Coffee-shop.jpg);
   height: 40vh;
   @extend %header-container-ph;
 }
 
-
 #herkunft--header-container {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/main/images/FEND-Coffee-beans-hand-2.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/main/images/FEND-Coffee-beans-hand-2.jpg);
   height: 40vh;
   @extend %header-container-ph;
 }
@@ -69,8 +83,10 @@ $margin--btn-bottom: 6rem;
   text-align: left;
   padding-bottom: 0;
 
-  h2 {
-    line-height: 3.4rem;
+  @include mq-rv(media-md) {
+    h2 {
+      line-height: 3.4rem;
+    }
   }
 
   .header--title {

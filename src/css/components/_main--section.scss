@@ -1,313 +1,322 @@
 // IDs
 
 #cafe__section--info {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 #herkunft__section--info {
-    .section--info {
-        flex-direction: column;
+  .section--info {
+    flex-direction: column;
 
-        @include mq(media-xl) {
-            flex-direction: row;
+    @include mq(media-xl) {
+      flex-direction: row;
 
-            &:not(:last-of-type) {
-                padding-bottom: 8rem; // first section in #herkunft gets margin-bottom
-            }
+      &:not(:last-of-type) {
+        padding-bottom: 8rem; // first section in #herkunft gets margin-bottom
+      }
 
-            &:nth-of-type(3) {
-                flex-direction: row-reverse; // move last picture #herkunft to the left
-            }
+      &:nth-of-type(3) {
+        flex-direction: row-reverse; // move last picture #herkunft to the left
+      }
 
-            .section--text {
-                &:not(:last-of-type) {
-                    padding-left: 0;
-                }
-            }
-
-            .margin-top {
-                margin-top: 15rem;
-            }
-
-            .extra-padding {
-                padding: 0 10rem;
-            }
+      .section--text {
+        &:not(:last-of-type) {
+          padding-left: 0;
         }
+      }
 
-        @include mq(media-lg) {
-            flex-direction: column;
-        }
-    }
-    .section--container {
-        @include mq(media-xl) {
-            width: 50%;
-        }
-        @include mq(media-lg) {
-            width: auto;
-        }
+      .margin-top {
+        margin-top: 15rem;
+      }
+
+      .extra-padding {
+        padding: 0 10rem;
+      }
     }
 
-    .section--info-full {
-        flex-direction: column;
-
-        @include mq(media-xl) {
-            flex-direction: row-reverse;
-        }
+    @include mq(media-lg) {
+      flex-direction: column;
     }
-
-    .align-right {
-        align-self: flex-end;
+  }
+  .section--container {
+    @include mq(media-xl) {
+      width: 50%;
     }
-
-    .align-left {
-        align-self: flex-start;
+    @include mq(media-lg) {
+      width: auto;
     }
+  }
 
-    .section--img {
-        width: 70%;
+  .section--info-full {
+    flex-direction: column;
+
+    @include mq(media-xl) {
+      flex-direction: row-reverse;
     }
+  }
+
+  .align-right {
+    align-self: flex-end;
+  }
+
+  .align-left {
+    align-self: flex-start;
+  }
+
+  .section--img {
+    width: 70%;
+  }
 }
 
 #kontakt--main {
-    padding-top: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+
+  @include mq(media-xl) {
+      display: flex;
+      justify-content: flex-end;
+
+    .form {
+        width: 50rem;
+        margin-right: 10rem;
+    }
+  }
 }
 
 // CLASSES
 
 video {
-    margin: 1.5em 0;
-    width: 85%;
-    height: auto;
+  margin: 1.5em 0;
+  width: 85%;
+  height: auto;
 
-    @include mq(media-xl) {
-        margin: 0;
-    }
+  @include mq(media-xl) {
+    margin: 0;
+  }
 }
 
 .video--full {
-    margin: 1.5em 0em 2em 0em;
-    width: 100%;
+  margin: 1.5em 0em 2em 0em;
+  width: 100%;
 }
 
 .main--section {
-    padding: $padding--main-m;
+  padding: $padding--main-m;
 
-    @include mq(media-xxl) {
-        display: inline-block;
-        padding: $padding--main-xxl;
-    }
+  @include mq(media-xxl) {
+    display: inline-block;
+    padding: $padding--main-xxl;
+  }
+
+  @include mq(media-xl) {
+    display: inline-block;
+    padding: $padding--main-xl;
+  }
+
+  @include mq(media-lg) {
+    display: inline-block;
+    padding: $padding--main-lg;
+  }
+
+  @include mq(media-md) {
+    display: inline-block;
+    padding: $padding--main-md;
+  }
+
+  @include mq(media-sm) {
+    padding: $padding--main-sm;
+  }
+
+  p {
+    margin-bottom: 2rem;
 
     @include mq(media-xl) {
-        display: inline-block;
-        padding: $padding--main-xl;
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &-dark {
+    display: inline-block;
+    background-color: $color--anthrazit;
+    color: $color--white;
+    padding: $padding--main-m;
+
+    @include mq(media-xl) {
+      padding: $padding--main-xl;
     }
 
     @include mq(media-lg) {
-        display: inline-block;
-        padding: $padding--main-lg;
-    }
-
-    @include mq(media-md) {
-        display: inline-block;
-        padding: $padding--main-md;
+      padding: $padding--main-lg;
     }
 
     @include mq(media-sm) {
-        padding: $padding--main-sm;
+      padding: $padding--main-sm;
     }
-
-    p {
-        margin-bottom: 2rem;
-
-        @include mq(media-xl) {
-            margin-bottom: 3.5rem;
-        }
-    }
-
-    &-dark {
-        display: inline-block;
-        background-color: $color--anthrazit;
-        color: $color--white;
-        padding: $padding--main-m;
-
-        @include mq(media-xl) {
-            padding: $padding--main-xl;
-        }
-
-        @include mq(media-lg) {
-            padding: $padding--main-lg;
-        }
-
-        @include mq(media-sm) {
-            padding: $padding--main-sm;
-        }
-    }
+  }
 }
 
 %section--info-ph {
-    display: flex;
+  display: flex;
 
-    @include mq(media-xl) {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  @include mq(media-xl) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-    @include mq(media-lg) {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
+  @include mq(media-lg) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .section--info {
-    @extend %section--info-ph;
+  @extend %section--info-ph;
+  flex-direction: column;
+
+  @include mq(media-xl) {
+    flex-direction: row-reverse;
+  }
+
+  @include mq(media-lg) {
+    flex-direction: row-reverse;
+  }
+
+  &-row {
+    flex-direction: row;
+  }
+
+  &:nth-of-type(odd) {
     flex-direction: column;
+    align-items: flex-end;
+    @extend %section--info-ph;
 
     @include mq(media-xl) {
-        flex-direction: row-reverse;
+      margin-bottom: 13rem;
     }
 
     @include mq(media-lg) {
-        flex-direction: row-reverse;
-    }
-
-    &-row {
-        flex-direction: row;
-    }
-
-    &:nth-of-type(odd) {
-        flex-direction: column;
-        align-items: flex-end;
-        @extend %section--info-ph;
-
-        @include mq(media-xl) {
-            margin-bottom: 13rem;
-        }
-
-        @include mq(media-lg) {
-            margin-bottom: 10rem;
-        }
-
-        @include mq(media-md) {
-            align-items: center;
-        }
-    }
-
-    .section--text-container {
-        display: flex;
-        flex-direction: column;
-
-        &:not(:last-of-type) {
-            padding-bottom: 2rem;
-        }
-
-        @include mq(media-xl) {
-            padding-right: 12rem;
-        }
-
-        @include mq(media-lg) {
-            padding-right: 12rem;
-        }
-
-        @include mq(media-md) {
-            padding-right: 0;
-        }
-
-    }
-
-    // margin under info--section
-    &:not(:last-of-type) {
-        margin-bottom: 4.5rem;
-    }
-
-    // every 2nd child of .section--info
-    &:nth-child(2n) {
-        .section--text {
-            @include mq(media-xl) {
-                padding-left: 12rem;
-                padding-top: 5rem;
-                padding-right: 10rem;
-            }
-
-            @include mq(media-lg) {
-                padding-left: 0rem;
-                padding-top: 5rem;
-                padding-right: 0rem;
-            }
-        }
-    }
-
-    &-row {
-        justify-content: space-between;
-        @extend %section--info-ph;
-    }
-
-    &-container {
-        display: flex;
-        width: 48%;
-    }
-
-    &-center {
-        @include mq(media-xl) {
-            display: flex;
-            justify-content: center;
-        }
-
-        @include mq(media-lg) {
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-.section--container {
-    @include mq(media-xl) {
-        width: 50%;
-    }
-
-    @include mq(media-lg) {
-        width: 50%;
-    }
-
-    img {
-        width: 100%;
-    }
-}
-
-.section--img {
-    margin: 1.5em 0;
-    width: $section--img-stretch;
-
-    @include mq(media-xl) {
-        margin: 0;
-    }
-
-    @include mq(media-lg) {
-        margin: 0;
+      margin-bottom: 10rem;
     }
 
     @include mq(media-md) {
-        width: 100%;
-        height: auto;
-        text-align: center;
+      align-items: center;
+    }
+  }
+
+  .section--text-container {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      padding-bottom: 2rem;
     }
 
-    &-full {
-        margin: 1.5em 0em 2em 0em;
-        width: 100%;
+    @include mq(media-xl) {
+      padding-right: 12rem;
     }
 
-    &-right {
-        margin: 4em 0;
-        text-align: right;
-        width: $section--img-stretch;
-
-        @include mq(media-xl) {
-            margin: 0;
-        }
-
-        @include mq(media-lg) {
-            margin: 0;
-        }
+    @include mq(media-lg) {
+      padding-right: 12rem;
     }
+
+    @include mq(media-md) {
+      padding-right: 0;
+    }
+  }
+
+  // margin under .section--info
+  &:not(:last-of-type) {
+    margin-bottom: 4.5rem;
+  }
+
+  // every 2nd child of .section--info
+  &:nth-child(2n) {
+    .section--text {
+      @include mq(media-xl) {
+        padding-left: 12rem;
+        padding-top: 5rem;
+        padding-right: 10rem;
+      }
+
+      @include mq(media-lg) {
+        padding-left: 0rem;
+        padding-top: 5rem;
+        padding-right: 0rem;
+      }
+    }
+  }
+
+  &-row {
+    justify-content: space-between;
+    @extend %section--info-ph;
+  }
+
+  &-container {
+    display: flex;
+    width: 48%;
+  }
+
+  &-center {
+    @include mq(media-xl) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include mq(media-lg) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.section--container {
+  @include mq(media-xl) {
+    width: 50%;
+  }
+
+  @include mq(media-lg) {
+    width: 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.section--img {
+  margin: 1.5em 0;
+  width: $section--img-stretch;
+
+  @include mq(media-xl) {
+    margin: 0;
+  }
+
+  @include mq(media-lg) {
+    margin: 0;
+  }
+
+  @include mq(media-md) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  &-full {
+    margin: 1.5em 0em 2em 0em;
+    width: 100%;
+  }
+
+  &-right {
+    margin: 4em 0;
+    text-align: right;
+    width: $section--img-stretch;
+
+    @include mq(media-xl) {
+      margin: 0;
+    }
+
+    @include mq(media-lg) {
+      margin: 0;
+    }
+  }
 }

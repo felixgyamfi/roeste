@@ -1,62 +1,84 @@
- /* Style inputs with type="text", select elements and textareas */
- input[type=text],
- select,
- textarea {
-     width: 100%;
-     padding: 1.2rem;
-     border-bottom: .3rem solid $color--black;
-     border-left: none;
-     border-right: none;
-     border-top: none;
-     box-sizing: border-box;
-     margin-top: .6rem;
-     margin-bottom: 4rem;
-     resize: vertical;
-         /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type="text"],
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  border-bottom: 0.3rem solid $color--black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin-top: 0.6rem;
+  margin-bottom: 4rem;
+  resize: vertical;
 
-         &:active {
-            background-color: $color--light-grey;
-         }
- }
+  &:active {
+    background-color: $color--light-grey;
+  }
 
- /* Style the submit button with a specific background color etc */
- input[type=submit] {
-     margin-top: 4rem;
-    display: inline-block;
-    color: $color--white;
-    padding: 1.5rem 5rem;
-    width: auto;
-    height: auto;
-    background: $color--btn-dunkel;
-    border: .2rem solid $color--btn-dunkel;
-    border-radius: .5rem;
-    text-decoration: none;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-size: $font--font-size-body-m;
-
-    @include mq(media-xl) {
-      font-size: $font--font-size-body;
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color--medium-grey-1;
+        opacity: 1; /* Firefox */
+  }
+  
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color--medium-grey-1;
     }
   
-    &:hover,
-    &:focus {
-      background: $color--btn-dunkel-hover;
-      border:  .2rem solid $color--btn-dunkel-hover;
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color--medium-grey-1;
     }
-    
-    &:active {
-      background: $color--btn-dunkel-active;
-      border:  .2rem solid $color--btn-dunkel-active;
-    }
- }
 
- input[type=checkbox] {
-     margin-right: 1rem;
- }
+  @include mq(media-xl) {
+    margin-bottom: 8rem;
+    padding-left: 3rem;
+  }
 
- /* Add a background color and some padding around the form */
- .form {
-     border-radius: .5rem;
- }
+}
+
+input[type="textarea"] {
+  height: 15rem;
+}
+
+// submit button
+input[type="submit"] {
+  margin-top: 4rem;
+  display: inline-block;
+  color: $color--white;
+  padding: 1.5rem 5rem;
+  width: auto;
+  height: auto;
+  background: $color--btn-dunkel;
+  border: 0.2rem solid $color--btn-dunkel;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: $font--font-size-body-m;
+
+  @include mq(media-xl) {
+    font-size: $font--font-size-body;
+  }
+
+  &:hover,
+  &:focus {
+    background: $color--btn-dunkel-hover;
+    border: 0.2rem solid $color--btn-dunkel-hover;
+  }
+
+  &:active {
+    background: $color--btn-dunkel-active;
+    border: 0.2rem solid $color--btn-dunkel-active;
+  }
+}
+
+input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.form {
+  border-radius: 0.5rem;
+}
+
