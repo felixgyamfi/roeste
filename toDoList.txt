@@ -1,9 +1,34 @@
 FEND // TO DO
 
-_kontakt:
-    Submit-Button zentrieren
+_home
+    slider for _section__sorten
+
+_nav
+    JS-implementaion for color change
+        (fade-in/fade-out?)
+
+_cafe
+    gallery for desktop MQs
+
+_kontakt
+    test submit function
+    center submit-button
     MQs
  
- 
-_herkunft:
-    MQs
+_herkunft
+    MQs for desktop
+
+_shop
+    build HTML & CSS
+        MQs for desktop
+    build JS
+
+_product-detail
+    build HTML & CSS
+        MQs for desktop
+    build JS
+
+_warenkorb
+    build HTML & CSS
+        MQs for desktop
+    build JS
