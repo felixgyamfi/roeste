@@ -24,13 +24,52 @@
         list-style: none;
     }
 
-    .nav--logo {
+    .nav--logo-b {
         img {
             height: 100%;
         }
     }
 
-    .nav--links {
+    .nav--links-b {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 100%;
+
+        li {
+            margin-top: 1rem;
+
+            &:not(:last-of-type) {
+                margin-right: 7rem;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:after {
+                    background: none repeat scroll 0 0 transparent;
+                    content: "";
+                    display: block;
+                    height: .1rem;
+                    background: $color--white;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .nav--logo-w {
+        img {
+            height: 100%;
+        }
+    }
+
+    .nav--links-w {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
