@@ -35,12 +35,21 @@
     }
   }
 
-
   .nav--links {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     height: 100%;
+
+    .shop-icon {
+      position:relative;
+      left: -3.3rem;
+
+      img {
+        height: 2rem;
+        width: auto;
+      }
+    }
 
     li {
       margin-top: 1rem;
@@ -80,7 +89,7 @@
   }
 }
 
-.changeColor {
+.invertColor {
   filter: invert(100%);
 }
 
