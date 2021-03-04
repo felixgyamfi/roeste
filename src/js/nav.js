@@ -5,10 +5,6 @@ const navlogo = document.querySelector(`.nav--logo`);
 const navLinks = document.querySelectorAll(`.nav--links a`);
 const header = document.querySelector(`header`);
 
-const sectionOneOptions = {
-  rootMargin: "-65px 0px 0px 0px",
-};
-
 const sectionOneObserver = new IntersectionObserver(function (
   entries,
   observer
