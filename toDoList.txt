@@ -1,22 +1,13 @@
 FEND // TO DO
 
-_home
-    slider for _section__sorten
-
 _nav
     JS-implementaion for color change
         (fade-in/fade-out?)
-
-_cafe
-    gallery for desktop MQs
 
 _kontakt
     test submit function
     center submit-button
     MQs
- 
-_herkunft
-    MQs for desktop
 
 _shop
     build HTML & CSS
@@ -32,3 +23,13 @@ _warenkorb
     build HTML & CSS
         MQs for desktop
     build JS
+    
+_home
+    slider for _section__sorten
+
+_cafe
+    gallery for desktop MQs
+
+ 
+_herkunft
+    MQs for desktop
