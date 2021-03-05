@@ -4,6 +4,7 @@ const nav = document.getElementById(`nav-d`);
 const navlogo = document.querySelector(`.nav--logo`);
 const navLinks = document.querySelectorAll(`.nav--links a`);
 const header = document.querySelector(`header`);
+const impressum = document.getElementById(`impressum--main`);
 
 const sectionOneObserver = new IntersectionObserver(function (
   entries,
@@ -28,3 +29,5 @@ const sectionOneObserver = new IntersectionObserver(function (
 });
 
 sectionOneObserver.observe(header);
+sectionOneObserver.observe(impressum);
+
