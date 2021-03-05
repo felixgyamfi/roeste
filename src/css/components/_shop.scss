@@ -1,0 +1,109 @@
+#section--shop {
+  text-align: center;
+
+  .btn--dunkel {
+    border: 3px solid $color--white;
+  }
+
+  .section--head {
+    text-align: left;
+
+    @include mq(media-xl) {
+      margin: 0;
+      width: 35%;
+    }
+  }
+
+  .icon-container {
+      margin-top: .3rem;
+    img {
+      height: 2rem;
+      width: auto;
+      filter: invert(100%);
+      padding: 0.3rem;
+    }
+  }
+
+  .display--product-img {
+    padding: 1rem;
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    );
+  }
+}
+
+.display--container {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+  margin-bottom: 1.5em;
+  text-align: left;
+
+  @include mq(media-xl) {
+    flex-flow: unset;
+  }
+
+  @include mq(media-lg) {
+    flex-flow: unset;
+  }
+}
+
+.display--product-container {
+  width: 48%;
+  margin: 1em 0em;
+
+  @include mq(media-xl) {
+    margin: 8rem 0;
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  @include mq(media-lg) {
+    margin: 8rem 0;
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.display--info-container {
+  margin-top: 2rem;
+}
+.display--product-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-name {
+  font-family: $font--font-family-sh-m;
+  font-style: $font--font-style-sh-m;
+  font-weight: $font--font-weight-sh-m;
+  font-size: $font--font-size-body-m;
+  line-height: 1.8rem;
+  margin-bottom: 0.3rem;
+
+  @include mq(media-xl) {
+    font-family: $font--font-family-sh;
+    font-style: $font--font-style-sh;
+    font-weight: $font--font-weight-sh;
+    font-weight: $font--font-size-sh;
+    margin: $font--margin-sh;
+  }
+}
+
+.product-price {
+  font-size: $font--font-size-body-m;
+  color: $color--medium-grey;
+
+  @include mq(media-xl) {
+    font-size: $font--font-size-body;
+    margin: $font--margin-sh;
+  }
+}

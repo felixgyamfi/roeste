@@ -1,3 +1,80 @@
+// FONTS
+
+$font--font-family-body:'Roboto', sans-serif;
+$font--font-style-body: normal;
+$font--font-weight-body: 400;
+
+// body m
+$font--font-size-body-m: 1.4rem; // 14px
+
+// h1 m
+$font--font-size-h1-m: 6.4rem;
+$font--color-h1-m: $color--white;
+$font--font-weight-h1-m: 900;
+$font--line-height-h1: 110%;
+$font--margin-h1: 3rem 0 2rem;
+
+
+// h2 m
+$font--font-size-h2-m: 3.6rem;
+$font--weight-h2: 900;
+$font--margin-h2: 0 0 2rem 0;
+
+// h3 m
+$font--font-size-h3-m: 3.2rem;
+$font--font-weight-h3-m: 900;
+$font--margin-h3-m: 0 0 1.2rem 0;
+
+// h4 m
+$font--font-size-h4-m: 2.4rem;
+$font--margin-h4: 0 0 1.2rem 0;
+
+// subhead m
+$font--font-family-sh-m: Roboto;
+$font--font-style-sh-m: normal;
+$font--font-weight-sh-m: 400;
+$font--font-size-sh-m: 1.8rem;
+
+$font--font-weight-regular: 400;
+
+// TABLET
+
+$font--font-size-body-t: 1.6rem;
+
+// DESKTOP
+
+// body
+$font--font-size-body: 1.8rem; // 18px
+
+// h1
+$font--font-size-h1: 9.6rem;
+$font--color-h1: $color--white;
+$font--font-weight-h1: 900;
+$font--line-height-h1: 110%;
+$font--margin-h1: 3rem 0 2rem;
+
+
+// h2
+$font--font-size-h2: 4.8rem;
+$font--font-weight-h2: 900;
+$font--font-margin-h2: 0 0 3.5rem 0;
+
+// h3
+$font--font-size-h3: 4.2rem;
+$font--font-weight-h3: 900;
+$font--margin-h3: 0 0 2.4rem 0;
+
+// h4
+$font--font-size-h4: 2.4rem;
+$font--margin-h4: 0 0 1.2rem 0;
+
+// subhead
+$font--font-family-sh: Roboto;
+$font--font-style-sh: normal;
+$font--font-weight-sh: 400;
+$font--font-size-sh: 1.8rem;
+$font--margin-sh: 0 0 0.7rem 0;
+
 h1 {
   font-size: $font--font-size-h1-m;
   color: $color--white;

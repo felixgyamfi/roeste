@@ -95,3 +95,20 @@ $margin--btn-bottom: 6rem;
 
   @extend %header-container-ph;
 }
+
+#shop--header-container {
+  text-align: left;
+  padding-bottom: 0;
+
+  @include mq-rv(media-md) {
+    h2 {
+      line-height: 3.4rem;
+    }
+  }
+
+  .header--title {
+    margin-top: 7rem;
+  }
+
+  @extend %header-container-ph;
+}

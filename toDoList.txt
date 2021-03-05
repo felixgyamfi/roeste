@@ -9,8 +9,9 @@ _kontakt
     MQs
 
 _shop
-    build HTML & CSS
-        MQs for desktop
+    navbar-m fix glitch
+    build HTML(DONE) & CSS
+        MQs for desktop 
     build JS
 
 _product-detail
@@ -28,7 +29,6 @@ _home
 
 _cafe
     gallery for desktop MQs
-
  
 _herkunft
     MQs for desktop
