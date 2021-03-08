@@ -1,0 +1,177 @@
+[
+  {
+    "id": 0,
+    "image": {
+      "imageName": "FEND_Coffee_Costa-Rica-2",
+      "alt": "Package of Rustica Coffee"
+    },
+    "productName": "Äthiopien",
+    "price": 690,
+    "description": "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
+
+    "symbolBeansWh": {
+      "symbol": "icon__kaffee-bohnen_wh",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressWh": {
+      "symbol": "icon__french-press_wh",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopWh": {
+      "symbol": "icon__kaffee-schaufel_wh",
+      "alt": "Stylized icon of coffee scoop"
+    },
+    "symbolBeansBl": {
+      "symbol": "icon__kaffee-bohnen_bl",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressBl": {
+      "symbol": "icon__french-press_bl",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopBl": {
+      "symbol": "icon__kaffee-schaufel_bl",
+      "alt": "Stylized icon of coffee scoop"
+    }
+  },
+  {
+    "id": 1,
+    "image": {
+      "imageName": "FEND_Coffee_Costa-Rica-2",
+      "alt": "Package of Rustica Coffee"
+    },
+    "productName": "Brasilien",
+    "price": 880,
+    "description": "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
+
+    "symbolBeansWh": {
+      "symbol": "icon__kaffee-bohnen_wh",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressWh": {
+      "symbol": "icon__french-press_wh",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopWh": {
+      "symbol": "icon__kaffee-schaufel_wh",
+      "alt": "Stylized icon of coffee scoop"
+    },
+    "symbolBeansBl": {
+      "symbol": "icon__kaffee-bohnen_bl",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressBl": {
+      "symbol": "icon__french-press_bl",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopBl": {
+      "symbol": "icon__kaffee-schaufel_bl",
+      "alt": "Stylized icon of coffee scoop"
+    }
+  },
+  {
+    "id": 2,
+    "image": {
+      "imageName": "FEND_Coffee_Costa-Rica-2",
+      "alt": "Package of Rustica Coffee"
+    },
+    "productName": "Atlantis",
+    "price": 1090,
+    "description": "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
+
+    "symbolBeansWh": {
+      "symbol": "icon__kaffee-bohnen_wh",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressWh": {
+      "symbol": "icon__french-press_wh",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopWh": {
+      "symbol": "icon__kaffee-schaufel_wh",
+      "alt": "Stylized icon of coffee scoop"
+    },
+    "symbolBeansBl": {
+      "symbol": "icon__kaffee-bohnen_bl",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressBl": {
+      "symbol": "icon__french-press_bl",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopBl": {
+      "symbol": "icon__kaffee-schaufel_bl",
+      "alt": "Stylized icon of coffee scoop"
+    }
+  },
+  {
+    "id": 3,
+    "image": {
+      "imageName": "FEND_Coffee_Costa-Rica-2",
+      "alt": "Package of Rustica Coffee"
+    },
+    "productName": "Mexico",
+    "price": 1100,
+    "description": "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
+
+    "symbolBeansWh": {
+      "symbol": "icon__kaffee-bohnen_wh",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressWh": {
+      "symbol": "icon__french-press_wh",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopWh": {
+      "symbol": "icon__kaffee-schaufel_wh",
+      "alt": "Stylized icon of coffee scoop"
+    },
+    "symbolBeansBl": {
+      "symbol": "icon__kaffee-bohnen_bl",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressBl": {
+      "symbol": "icon__french-press_bl",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopBl": {
+      "symbol": "icon__kaffee-schaufel_bl",
+      "alt": "Stylized icon of coffee scoop"
+    }
+  },
+  {
+    "id": 4,
+    "image": {
+      "imageName": "FEND_Coffee_Costa-Rica-2",
+      "alt": "Package of Rustica Coffee"
+    },
+    "productName": "Columbien",
+    "price": 1200,
+    "description": "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
+
+    "symbolBeansWh": {
+      "symbol": "icon__kaffee-bohnen_wh",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressWh": {
+      "symbol": "icon__french-press_wh",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopWh": {
+      "symbol": "icon__kaffee-schaufel_wh",
+      "alt": "Stylized icon of coffee scoop"
+    },
+    "symbolBeansBl": {
+      "symbol": "icon__kaffee-bohnen_bl",
+      "alt": "Stylized icon of coffee beans"
+    },
+    "symbolPressBl": {
+      "symbol": "icon__french-press_bl",
+      "alt": "Stylized icon of french press coffee maker"
+    },
+    "symbolScoopBl": {
+      "symbol": "icon__kaffee-schaufel_bl",
+      "alt": "Stylized icon of coffee scoop"
+    }
+  }
+]
