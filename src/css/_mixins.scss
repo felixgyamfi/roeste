@@ -1,39 +1,51 @@
 // from small to large
 
-@mixin mq($size){
-    @if $size == media-xxl {
-        @media (min-width: 120em) { @content; } // 1920px
-    }
-    @else if $size == media-xl {
-        @media (min-width: 87.5em) { @content; } // 1200px
-    }
-    @else if $size == media-lg {
-        @media (min-width: 62em) { @content; } // 992px
-    }
-    @else if $size == media-md {
-        @media (min-width: 50em) { @content; } // 768px
-    } 
-    @else if $size == media-sm {
-        @media (min-width: 36em) { @content; } // 576px
-    }   
+@mixin mq($size) {
+  @if $size == media-xxl {
+    @media (min-width: 120em) {
+      @content;
+    } // 1920px
+  } @else if $size == media-xl {
+    @media (min-width: 87.5em) {
+      @content;
+    } // 1200px
+  } @else if $size == media-lg {
+    @media (min-width: 62em) {
+      @content;
+    } // 992px
+  } @else if $size == media-md {
+    @media (min-width: 50em) {
+      @content;
+    } // 768px
+  } @else if $size == media-sm {
+    @media (min-width: 36em) {
+      @content;
+    } // 576px
+  }
 }
 
 // from large to small
 
-@mixin mq-rv($size){
-    @if $size == media-xxl {
-        @media (max-width: 120em) { @content; } // 1920px
-    }
-    @else if $size == media-xl {
-        @media (max-width: 87.5em) { @content; } // 1200px
-    }
-    @else if $size == media-lg {
-        @media (max-width: 62em) { @content; } // 992px
-    }
-    @else if $size == media-md {
-        @media (max-width: 50em) { @content; } // 768px
-    } 
-    @else if $size == media-sm {
-        @media (max-width: 36em) { @content; } // 576px
-    }   
+@mixin mq-rv($size) {
+  @if $size == media-xxl {
+    @media (max-width: 120em) {
+      @content;
+    } // 1920px
+  } @else if $size == media-xl {
+    @media (max-width: 87.5em) {
+      @content;
+    } // 1200px
+  } @else if $size == media-lg {
+    @media (max-width: 62em) {
+      @content;
+    } // 992px
+  } @else if $size == media-md {
+    @media (max-width: 50em) {
+      @content;
+    } // 768px
+  } @else if $size == media-sm {
+    @media (max-width: 36em) {
+      @content;
+    } // 576px
+  }
 }

@@ -1,15 +1,34 @@
 FEND // TO DO
 
+
+JAVASCRIPT
+
+_shop
+    navbar-m fix glitch                                 DONE 
+    build JS
+        create shop.JS: load Items from JSON            DONE
+        build shopping cart
+            add items from shop to cart
+            navbar icon -> number of items in cart
+
 _nav
-    impressum.html color change
+        fix: jump to top when menu slide is toggled     
+        impressum.html color change                     DONE
 
 _kontakt
     test submit function
-    center submit-button
-    MQs
+
+_home
+    slider for _section__sorten
+
+_product-detail
+    build JS
+
+CSS & HTML
+
 
 _shop
-    navbar-m fix glitch
+    navbar-m fix glitch                                 DONE
     build HTML(DONE) & CSS
         MQs for desktop 
     build JS
@@ -24,11 +43,13 @@ _warenkorb
         MQs for desktop
     build JS
     
-_home
-    slider for _section__sorten
 
 _cafe
     gallery for desktop MQs
  
 _herkunft
     MQs for desktop
+
+_kontakt
+    center submit-button
+    MQs

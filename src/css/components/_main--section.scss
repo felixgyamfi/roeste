@@ -73,12 +73,12 @@
   width: 100%;
 
   @include mq(media-xl) {
-      display: flex;
-      justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 
     .form {
-        width: 50rem;
-        margin-right: 10rem;
+      width: 50rem;
+      margin-right: 10rem;
     }
   }
 }
@@ -243,7 +243,7 @@ video {
       }
 
       @include mq(media-lg) {
-        padding-left: 0rem;
+        padding-left: 12rem;
         padding-top: 5rem;
         padding-right: 0rem;
       }

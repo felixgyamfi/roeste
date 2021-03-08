@@ -4,14 +4,10 @@ const nav = document.getElementById(`nav-d`);
 const navlogo = document.querySelector(`.nav--logo`);
 const navLinks = document.querySelectorAll(`.nav--links a`);
 const header = document.querySelector(`header`);
-const impressum = document.getElementById(`impressum--main`);
 
-const sectionOneObserver = new IntersectionObserver(function (
-  entries,
-  observer
-) {
+// eslint-disable-next-line func-names
+const sectionOneObserver = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
-    console.log(entry.isIntersecting);
     if (!entry.isIntersecting) {
       navLinks.forEach((navLink) => {
         nav.classList.add("whiteBg");
@@ -29,5 +25,3 @@ const sectionOneObserver = new IntersectionObserver(function (
 });
 
 sectionOneObserver.observe(header);
-sectionOneObserver.observe(impressum);
-

@@ -11,7 +11,7 @@
 
 .navbar-m {
     padding: 1rem 2.4rem;
-
+    z-index: 902;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +66,7 @@
 
     position: fixed;
     background-color: black;
-    z-index: 900;
+    z-index: 910;
     width: 100%;
     height: 100vh;
     display: flex;
