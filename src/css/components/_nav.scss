@@ -12,7 +12,7 @@
   }
 
   @include mq-rv(media-md) {
-    display: none; // switch mobile nav off
+    display: none; // switch desktop nav off
   }
 }
 
@@ -31,6 +31,10 @@
   }
 
   .nav--logo {
+    height: -webkit-fill-available;
+    div {
+      height: 100%;
+    }
     img {
       height: 100%;
     }
@@ -42,7 +46,7 @@
     justify-content: flex-start;
     height: 100%;
 
-    .shop-icon {
+    .cart-icon {
       position:relative;
       left: -3.3rem;
 
@@ -81,10 +85,6 @@
     }
   }
 
-  div {
-    height: 100%;
-  }
-
   @include mq(media-xxl) {
     max-width: 220rem;
   }
@@ -97,3 +97,119 @@
 .whiteBg {
   background-color: white;
 }
+
+// cart icon
+
+.nav-icon {
+}
+
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-items {
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  position: absolute;
+  top: -2.6rem;
+  right: -.4rem;
+  background: $color--petrol;
+  border-radius: 50%;
+  color: $color--white;
+  font-size: 1rem;
+}
+
+/* --- mobile version --- */
+
+#nav-m {
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  @include mq-rv(media-md) {
+      display: flex; // switch on mobile nav
+  }
+}
+
+.navbar-m {
+  padding: 1rem 2.4rem;
+  z-index: 902;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5.5rem;
+
+  ul {
+      list-style: none;
+  }
+
+  .nav--logo-m {
+      img {
+          height: 100%;
+      }
+  }
+
+  div {
+      height: 100%;
+  }
+
+  @include mq(media-xxl) {
+      max-width: 220rem;
+  }
+
+  @include mq(media-md) {
+      padding: $padding--nav_m-md;
+  }
+
+  @include mq(media-sm) {
+      padding: $padding--nav_m-sm;
+  }
+}
+
+.nav--burger {
+  padding: .8rem 0;
+
+  img {
+      height: 100%;
+  }
+}
+
+.slideIn {
+  left: 0;
+}
+
+.nav--menu {
+  left: 100%;
+  transition: $transition--main;
+
+  position: fixed;
+  background-color: black;
+  z-index: 910;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &-close {
+      padding: 2.4rem;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  nav {
+      margin: auto auto auto 6rem;
+  }
+}
+
+.visible {
+  left: 0;
+}
+

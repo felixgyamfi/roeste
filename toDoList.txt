@@ -7,13 +7,15 @@ _shop
     navbar-m fix glitch                                 DONE 
     build JS
         create shop.JS: load Items from JSON            DONE
-        build shopping cart
-            add items from shop to cart
-            navbar icon -> number of items in cart
+
+_cart
+    build shopping cart
+    add items from shop to cart
+    navbar icon -> number of items in cart
 
 _nav
-        fix: jump to top when menu slide is toggled     
-        impressum.html color change                     DONE
+    fix: jump to top when menu slide is toggled     
+    impressum.html color change                     DONE
 
 _kontakt
     test submit function
@@ -24,8 +26,10 @@ _home
 _product-detail
     build JS
 
-CSS & HTML
 
+
+
+CSS & HTML
 
 _shop
     navbar-m fix glitch                                 DONE
@@ -33,16 +37,15 @@ _shop
         MQs for desktop 
     build JS
 
+_cart
+    build shopping cart                                 DONE
+        MQs for desktop
+    navbar icon -> number of items in cart              DONE
+
 _product-detail
     build HTML & CSS
         MQs for desktop
     build JS
-
-_warenkorb
-    build HTML & CSS
-        MQs for desktop
-    build JS
-    
 
 _cafe
     gallery for desktop MQs

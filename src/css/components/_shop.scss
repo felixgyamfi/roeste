@@ -32,6 +32,22 @@
       rgba(0, 0, 0, 0.1)
     );
   }
+
+  .display--img-container {
+    position: relative;
+    
+    .quick-add-btn {
+      display: none;
+      background: $color--white;
+      border-radius: .5rem;
+      width: fit-content;
+      padding: 1rem;
+      position: absolute;
+      margin-top: 100%;
+      margin-left: calc(100% - 11rem);
+    }
+  
+  }
 }
 
 .display--container {

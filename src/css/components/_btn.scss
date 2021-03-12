@@ -27,10 +27,7 @@
     background: $color--btn-dunkel-active;
     border: 2px solid $color--btn-dunkel-active;
   }
-}
-
-#home__section--info {
-  .btn--dunkel {
+  #home__section--info {
     height: auto;
     width: auto;
     background: none;
@@ -38,5 +35,36 @@
     text-align: left;
     color: black;
     padding: 0;
+  }
+}
+
+.btn--hell {
+  display: inline-block;
+  color: $color--black;
+  padding: 15px 50px;
+  width: auto;
+  height: auto;
+  background: $color--btn-hell;
+  border: 2px solid $color--btn-hell;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: $font--font-size-body-m;
+
+  @include mq(media-xl) {
+    font-size: $font--font-size-body;
+  }
+
+  &:hover,
+  &:focus {
+    background: $color--btn-hell-hover;
+    border: 2px solid $color--btn-hell-hover;
+  }
+
+  &:active {
+    background: $color--btn-hell-active;
+    border: 2px solid $color--btn-hell-active;
   }
 }

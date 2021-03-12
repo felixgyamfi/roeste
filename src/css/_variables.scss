@@ -9,7 +9,6 @@ $padding--side-xxl: 10rem;
 
 $section--img-stretch: calc(100% - 8.4rem);
 
-
 // nav
 $padding--nav_m-m: 1rem $padding--side-m;
 $padding--nav_m-sm: 1rem $padding--side-sm;
@@ -27,11 +26,12 @@ $padding--main-xl: 12.5rem $padding--side-xl;
 $padding--main-xxl: 12.5rem $padding--side-xxl;
 
 
-// COLORS
+// Colors
 
 $color--white: rgba(255,255,255,1);
 $color--black: rgb(0, 0, 0);
 $color--anthrazit: rgba(26,26,26,1);
+$color--grey: rgb(58,55,52,1);
 $color--kraftpapier: rgba(215,190,157,1);
 $color--petrol: rgba(0,109,126,1);
 $color--rosa: rgba(237,209,201,1);
@@ -40,17 +40,25 @@ $color--medium-grey: rgba(115,115,115,1);
 $color--medium-grey-1: rgba(196,196,196,1);
 $color--light-grey: rgba(233,233,233,1);
 
-$color--btn-dunkel: rgb(26, 26, 26);
-$color--btn-dunkel-hover: rgb(58, 55, 52);
-$color--btn-dunkel-active: 215,190,157,1;
+$color--btn-dunkel: $color--anthrazit;
+$color--btn-dunkel-hover: $color--grey;
+$color--btn-dunkel-active: $color--kraftpapier;
+
+$color--btn-hell: $color--kraftpapier;
+$color--btn-hell-hover: $color--grey;
+$color--btn-hell-active: $color--grey;
 
 
-// LINKS
+// Links
 
 $color--link: $color--white;
 $color--link-visited: $color--anthrazit;
 $color--link-hover: $color--medium-grey;
 $color--link-active: $color--medium-grey;
+
+// Transitions
+
+$transition--main: left .5s linear;
 
 
 

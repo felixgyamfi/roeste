@@ -2,9 +2,10 @@
 @import "mixins";
 @import "typography";
 @import "base";
+@import "components/btn";
 @import "components/nav";
-@import "components/nav-m";
 @import "components/header";
+@import "components/cart";
 @import "components/main--section";
 @import "components/shop";
 @import "components/section--sorten";
@@ -14,7 +15,6 @@
 @import "components/section--gallery";
 @import "components/section--impressum";
 @import "components/footer";
-@import "components/btn--dunkel";
 @import "components/section--kontakt";
 @import "components/form";
 
